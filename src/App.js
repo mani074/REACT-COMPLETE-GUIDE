@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 //import Radium, { StyleRoot } from "radium";
-import "./App.css";
+import classes from "./App.css";
 import Person from "./Person/Person";
 
 class App extends Component {
@@ -96,8 +96,9 @@ class App extends Component {
     const classes = ["red", "bold"].join(" ");
 
     return (
-      /*<StyleRoot>*/
-      <div className="App">
+      /*<StyleRoot>
+      <div className="App">*/
+      <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
         <p className={classes}>This is Really Working!!!</p>
         <button style={maniStyle} onClick={this.togglePersonsHandler}>
